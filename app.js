@@ -4,6 +4,9 @@ import { startDB } from './src/config/database.js';
 
 const app = express();
 
+// middlewares
+app.use(express.json())
+
 
 const port = 3001
 

@@ -1,0 +1,25 @@
+### TRAER LOS POST
+GET http://localhost:3001/api/posts
+
+### CREAR POST
+POST http://localhost:3001/api/posts
+Content-Type: application/json
+
+{
+    "title": "Nuevo titulo",
+    "description": "posteo",
+    "LinkUrl": "www.url.com"
+}
+
+### MODIFICAR POST
+PUT http://localhost:3001/api/posts
+Content-Type: application/json
+
+{
+    "title": "Nuevo titulo",
+    "description": "posteo",
+    "LinkUrl": "www.url.com"
+}
+
+### ELIMINAR POST
+DELETE http://localhost:3001/api/posts
