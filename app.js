@@ -1,5 +1,6 @@
 import express from 'express';
 import { postRouter } from './src/routes/post.routes.js';
+import { startDB } from './src/config/database.js';
 
 const app = express();
 
@@ -10,4 +11,5 @@ app.use('/', postRouter);
 
 app.listen(port, () => {
     console.log(`Server listenig in http://localhost:${port}`)
+    startDB();
 });

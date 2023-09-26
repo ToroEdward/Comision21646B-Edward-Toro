@@ -1,7 +1,7 @@
-import { sequelize } from "../config/database.js";
 import { DataTypes } from "sequelize";
+import { sequelize } from "../config/database.js";
 
-const PostModel = sequelize.define('Post', {
+export const PostModel = sequelize.define('Post', {
     title: {
         type: DataTypes.STRING,
         allowNull: true
