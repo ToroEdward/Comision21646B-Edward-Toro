@@ -13,6 +13,7 @@ export const PostModel = sequelize.define('Post', {
     linkUrl: {
         type: DataTypes.STRING,
         allowNull: true
-    },
-     timestamps: true
-});
+    }
+}, {
+    timestamps: true
+})

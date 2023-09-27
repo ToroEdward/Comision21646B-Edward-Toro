@@ -1,27 +1,27 @@
 import { body } from "express-validator";
 
 export const createPostSchema = [
-    body("tilte")
+    body('tilte')
         .isString().withMessage("Debe ser string")
         .notEmpty().withMessage("No debe ser vacio"),
-    body("description")
+    body('description')
         .isString().withMessage("Debe ser string")
         .notEmpty().withMessage("No debe ser vacio"),
-    body("linkUrl")
+    body('linkUrl')
         .isURL().withMessage("Ingrese una url valida")
         .notEmpty().withMessage("No debe ser vacio"),
 ]
 
 export const editPostSchema = [
-    body("tilte")
+    body('tilte')
         .optional()
         .isString().withMessage("Debe ser string")
         .notEmpty().withMessage("No debe ser vacio"),
-    body("description")
+    body('description')
         .optional()
         .isString().withMessage("Debe ser string")
         .notEmpty().withMessage("No debe ser vacio"),
-    body("linkUrl")
+    body('linkUrl')
         .optional()
         .isURL().withMessage("Ingrese una url valida")
         .notEmpty().withMessage("No debe ser vacio"),

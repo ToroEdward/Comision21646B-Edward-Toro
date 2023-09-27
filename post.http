@@ -8,7 +8,7 @@ Content-Type: application/json
 {
     "title": "Primer posteo",
     "description": "primer descripcion",
-    "LinkUrl": "https://www.comparahosting.com/wp-content/uploads/2020/06/Imagen-pincipal-foro-en-l%C3%ADnea.jpg"
+    "linkUrl": "https://www.comparahosting.com/wp-content/uploads/2020/06/Imagen-pincipal-foro-en-l%C3%ADnea.jpg"
 }
 
 ### MODIFICAR POST
@@ -17,8 +17,6 @@ Content-Type: application/json
 
 {
     "title": "Nuevo titulo",
-    "description": "posteo",
-    "LinkUrl": "www.url.com"
 }
 
 ### ELIMINAR POST

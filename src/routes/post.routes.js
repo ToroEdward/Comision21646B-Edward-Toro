@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { ctrlCreatePost, ctrlDeletePost, ctrlGetPost, ctrlUpdatePost } from "../controllers/post.controllers.js";
+import { ctrlCreatePost, ctrlDeletePost, ctrlGetPosts, ctrlUpdatePost } from "../controllers/post.controllers.js";
 import { createPostSchema, editPostSchema } from "../models/Schemas/post.schema.js";
 import { validator } from "../middlewares/validator.js";
 import { PostModel } from "../models/Posts.js";
@@ -7,7 +7,7 @@ import { PostModel } from "../models/Posts.js";
 const postRouter = Router();
 
 // endpoint para traer todas las tareas
-postRouter.get("/api/posts", ctrlGetPost)
+postRouter.get("/api/posts", ctrlGetPosts)
 
 // endpoint para Crear una tarea
 postRouter.post("/api/posts", createPostSchema, validator, ctrlCreatePost)
