@@ -6,9 +6,9 @@ POST http://localhost:3001/api/posts
 Content-Type: application/json
 
 {
-    "title": "Nuevo titulo",
-    "description": "posteo",
-    "LinkUrl": "www.url.com"
+    "title": "Primer posteo",
+    "description": "primer descripcion",
+    "LinkUrl": "https://www.comparahosting.com/wp-content/uploads/2020/06/Imagen-pincipal-foro-en-l%C3%ADnea.jpg"
 }
 
 ### MODIFICAR POST

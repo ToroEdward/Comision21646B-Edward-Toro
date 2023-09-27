@@ -14,5 +14,5 @@ app.use('/', postRouter);
 
 app.listen(port, () => {
     console.log(`Server listenig in http://localhost:${port}`)
-    startDB();
-});
+    startDB()
+}) 

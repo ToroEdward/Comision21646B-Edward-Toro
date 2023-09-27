@@ -7,7 +7,7 @@ export const createPostSchema = [
     body("description")
         .isString().withMessage("Debe ser string")
         .notEmpty().withMessage("No debe ser vacio"),
-    body("LinkUrl")
+    body("linkUrl")
         .isURL().withMessage("Ingrese una url valida")
         .notEmpty().withMessage("No debe ser vacio"),
 ]
@@ -21,7 +21,7 @@ export const editPostSchema = [
         .optional()
         .isString().withMessage("Debe ser string")
         .notEmpty().withMessage("No debe ser vacio"),
-    body("LinkUrl")
+    body("linkUrl")
         .optional()
         .isURL().withMessage("Ingrese una url valida")
         .notEmpty().withMessage("No debe ser vacio"),
