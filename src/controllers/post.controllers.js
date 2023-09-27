@@ -35,14 +35,15 @@ export const ctrlUpdatePost = async (req, res) => {
     try {
         const post = await PostModel.findByPk(id)
 
-        if(!post) {
+        if (!post) {
             return res.status(404).json({
                 message: 'Posteo no encontrado'
             })
         }
-        post.update(req.body)
-        return res.status(200).json(post)
 
+        post.update(req.body)
+        
+        return res.status(200).json(post)
     } catch (error) {
         console.error(error)
         return res.status(500).json({

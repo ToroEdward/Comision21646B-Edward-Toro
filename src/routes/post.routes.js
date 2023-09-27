@@ -7,15 +7,15 @@ import { PostModel } from "../models/Posts.js";
 const postRouter = Router();
 
 // endpoint para traer todas las tareas
-postRouter.get("/api/posts", ctrlGetPosts)
+postRouter.get('/api/posts', ctrlGetPosts)
 
 // endpoint para Crear una tarea
-postRouter.post("/api/posts", createPostSchema, validator, ctrlCreatePost)
+postRouter.post('/api/posts', createPostSchema, validator, ctrlCreatePost)
 
 // endpoint para modificar una tarea
-postRouter.put("/api/posts/:id", editPostSchema, validator, ctrlUpdatePost)
+postRouter.put('/api/posts/:id', editPostSchema, validator, ctrlUpdatePost)
 
 // endpoint para eliminar una tarea
-postRouter.delete("/api/posts/:id", ctrlDeletePost)
+postRouter.delete('/api/posts/:id', ctrlDeletePost)
 
 export { postRouter }
