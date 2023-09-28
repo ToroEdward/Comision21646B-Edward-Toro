@@ -1,3 +1,3 @@
 ### PROYECTO FINAL ###
 
-## Desarrolo de un foro multitematico para crear y compartir publicaciones de temas variados y presentar publlicaciones de manera atractiva ##
+## Desarrolo de un foro multitematico para crear y compartir publicaciones de temas variados y presentar publicaciones de manera atractiva ##
