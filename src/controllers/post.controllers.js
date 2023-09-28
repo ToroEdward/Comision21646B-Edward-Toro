@@ -1,5 +1,19 @@
 import { PostModel } from "../models/Posts.js";
 
+// controlador para mostrar las vistas
+export const ctrlView = async (req, res) => {
+    try {
+        const posts = await PostModel.findAll();
+        res.render('posts.ejs', {posts})
+
+    } catch (error) {
+        console.error(error)
+        return res.status(500).json({
+            message: 'Error en el servidor'
+        })
+    }
+}
+
 // controlador para traer todas los Posts
 export const ctrlGetPosts = async (req, res) => {
     try {

@@ -2,3 +2,7 @@ body{
     background-color: aqua;
 }
 
+.card-img-top{
+    height: 250px;
+    object-fit: cover;
+}
