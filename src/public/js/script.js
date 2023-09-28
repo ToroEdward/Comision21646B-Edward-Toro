@@ -69,14 +69,14 @@ form.addEventListener("submit", (event) => {
             linkUrl: inputLinkUrl.value,
         };
 
-        fetch("http://localhost:3001/api/posts",{
-            method: 'POST',
+        fetch("http://localhost:3001/api/posts", {
+            method: "POST",
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(newPost),
-        }).then((res) => {
-            console.log(res)
+        }).then(res => {
+            // console.log(res)
             if(res.ok) {
                 alert("Posteo creado exitosamente");
                 myModal.hide();
