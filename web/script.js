@@ -42,6 +42,7 @@ document.addEventListener('click', (event) => {
 document.addEventListener('click', (event) => {
     if (event.target.matches('#btn-edit')) {
         const article = event.target.closest('.col-4');
+        console.log(article);
 
         const idArticle = article.dataset.id;
         const linkUrlEdit = article.children[0].children[0].src;
@@ -68,14 +69,14 @@ form.addEventListener("submit", (event) => {
             linkUrl: inputLinkUrl.value,
         };
 
-        fetch("http://localhost:3001/api/posts",{
+         fetch("http://localhost:3001/api/posts", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(newPost),
         }).then((res) => {
-            console.log(res)
+            // console.log(res)
             if(res.ok) {
                 alert("Posteo creado exitosamente");
                 myModal.hide();

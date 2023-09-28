@@ -14,6 +14,6 @@ export const PostModel = sequelize.define('Post', {
         type: DataTypes.STRING,
         allowNull: true
     }
-}, {
+    }, {
     timestamps: true
 })
