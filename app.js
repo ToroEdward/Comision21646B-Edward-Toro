@@ -26,7 +26,7 @@ app.set('views', path.join(__dirname, "src", "views"))
 app.set('view engine', 'ejs');
 
 
-const port = 3001
+const port = 3001;
 
 app.use("/", postRouter)
 
