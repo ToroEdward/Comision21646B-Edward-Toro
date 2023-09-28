@@ -31,6 +31,6 @@ const port = 3001
 app.use("/", postRouter)
 
 app.listen(port, () => {
-    console.log(`Server listenig in http://localhost:${port}`)
+    console.log(`Server listenig in http://localhost:${port}/posts`)
     startDb()
 }) 
