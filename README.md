@@ -1,3 +1,5 @@
+<div align="center">
+
 ### PROYECTO FINAL ###
 
 ## Desarrolo de un foro multitematico para crear y compartir publicaciones de temas variados y presentar publicaciones de manera atractiva ##
@@ -11,3 +13,4 @@ Tecnologias de programacion utilizadas
 1. Sequelize
 
 Se utilizó Bootstrap para el diseño responsivo y se agrego css para el estilo personalizado
+</div>
