@@ -1,0 +1,23 @@
+### TRAER LOS POST
+GET http://localhost:3001/api/posts
+
+### CREAR POSTEO
+POST http://localhost:3001/api/posts
+Content-Type: application/json
+
+{
+    "title": "Primer posteo",
+    "description": "primer descripcion",
+    "linkUrl": "https://www.comparahosting.com/wp-content/uploads/2020/06/Imagen-pincipal-foro-en-l%C3%ADnea.jpg"
+}
+
+### MODIFICAR POST
+PUT http://localhost:3001/api/posts
+Content-Type: application/json
+
+{
+    "title": "Nuevo titulo",
+}
+
+### ELIMINAR POST
+DELETE http://localhost:3001/api/posts
