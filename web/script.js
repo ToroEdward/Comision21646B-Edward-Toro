@@ -69,10 +69,10 @@ form.addEventListener("submit", (event) => {
             linkUrl: inputLinkUrl.value,
         };
 
-         fetch("http://localhost:3001/api/posts", {
+        fetch("http://localhost:3001/api/posts", {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'content-type': 'application/json'
             },
             body: JSON.stringify(newPost),
         }).then((res) => {
