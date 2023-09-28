@@ -44,18 +44,18 @@ document.addEventListener('click', (event) => {
         const article = event.target.closest('.col-4');
         console.log(article);
 
-        // const idArticle = article.dataset.id;
-        // const linkUrlEdit = article.children[0].children[0].src;
-        // const tilteEdit = article.children[0].children[1].children[0].textContent;
-        // const descriptionEdit = article.children[0].children[1].children[1].textContent;
+        const idArticle = article.dataset.id;
+        const linkUrlEdit = article.children[0].children[0].src;
+        const tilteEdit = article.children[0].children[1].children[0].textContent;
+        const descriptionEdit = article.children[0].children[1].children[1].textContent;
 
-        // idForm = idArticle;
-        // inputTitle.value = tilteEdit;
-        // inputDescription.value = descriptionEdit;
-        // inputLinkUrl.value = linkUrlEdit;
-        // option = 'edit';
-        // btnSave.textContent = 'Editar';
-        // myModal.show();
+        idForm = idArticle;
+        inputTitle.value = tilteEdit;
+        inputDescription.value = descriptionEdit;
+        inputLinkUrl.value = linkUrlEdit;
+        option = 'edit';
+        btnSave.textContent = 'Editar';
+        myModal.show();
     }
 });
 
