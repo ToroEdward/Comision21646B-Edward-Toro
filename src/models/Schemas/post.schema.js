@@ -1,7 +1,7 @@
 import { body } from "express-validator";
 
 export const createPostSchema = [
-    body('tilte')
+    body('title')
         .isString().withMessage("Debe ser string")
         .notEmpty().withMessage("No debe ser vacio"),
     body('description')
@@ -13,7 +13,7 @@ export const createPostSchema = [
 ]
 
 export const editPostSchema = [
-    body('tilte')
+    body('title')
         .optional()
         .isString().withMessage("Debe ser string")
         .notEmpty().withMessage("No debe ser vacio"),
